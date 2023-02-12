@@ -12,10 +12,10 @@ DICT_NAMES=(
   "网络流行新词【官方推荐】"
 )
 DICT_SHORTS=(
+  "sogou_net"
 	"sogou_standard"
 	"sogou_computer"
 	"sogou_anime"
-  "sogou_net"
 )
 DICT_PREFIX="zcheng"
 DICT_MASTER_NAME="awesome"
