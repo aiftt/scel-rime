@@ -1,27 +1,30 @@
 #!/bin/bash
 DICT_IDS=(
 	"4"
-	"11640"
+	# "11640"
 	"15117"
   "88130"
   "15233"
   "20647"
+  "73918"
 )
 DICT_NAMES=(
   "网络流行新词【官方推荐】"
-	"搜狗标准词库"
+	# "搜狗标准词库"
 	"计算机词汇大全【官方推荐】"
   "逆水寒OL【官方推荐】"
   "魔兽世界【官方推荐】"
   "中国高等院校（大学）大全【官方推荐】"
+  "王者荣耀【官方推荐】"
 )
 DICT_SHORTS=(
-	"x_sogou_net"
-	"x_sogou_standard"
-	"x_sogou_computer"
-	"x_sogou_nsh"
-  "x_sogou_wow"
-  "x_sogou_daxue"
+	"sogou_net"
+	# "sogou_standard"
+	"sogou_computer"
+	"sogou_nsh"
+  "sogou_wow"
+  "sogou_daxue"
+  "sogou_wangz"
 )
 DICT_PREFIX="zcheng"
 # DICT_MASTER_NAME="awesome"
