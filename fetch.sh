@@ -8,7 +8,7 @@ mkdir -p out/scel
 mkdir -p out/rime
 
 date=$(date +%Y.%m.%d)
-master_header="---\nname: ${DICT_PREFIX}.${DICT_MASTER_NAME}\nversion: \"${date}\"\nsort: by_weight\nuse_preset_vocabulary: true\nimport_tables:\n  - luna_pinyin\n"
+master_header="---\nname: ${DICT_PREFIX}\nversion: \"${date}\"\nsort: by_weight\nuse_preset_vocabulary: true\nimport_tables:\n"
 
 RIME=~/Library/Rime
 
@@ -19,7 +19,7 @@ while [ "x${DICT_IDS[i]}" != "x" ]; do
 	name=${DICT_NAMES[i]}
 	shortname=${DICT_SHORTS[i]}
 	master_header+="  - ${DICT_PREFIX}.${shortname}\n"
-	fname="$RIME/${DICT_PREFIX}.${shortname}.dict.yaml"
+	fname="$RIME/my_dicts/${DICT_PREFIX}.${shortname}.dict.yaml"
 	if [ -f "$fname" ]; then
 		echo "$fname existed."
     i=$(($i + 1))
@@ -35,7 +35,7 @@ while [ "x${DICT_IDS[i]}" != "x" ]; do
 done
 
 master_header+="...\n\n"
-echo -e "$master_header" >out/rime/${DICT_PREFIX}.${DICT_MASTER_NAME}.dict.yaml
+echo -e "$master_header" >out/rime/${DICT_PREFIX}.dict.yaml
 
 if [[ ! -z "$COPY" ]]; then
 	cp out/rime/* "$COPY"
